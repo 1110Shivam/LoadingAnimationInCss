@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+  }
+  .wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .one, .two, .three, .four, .five{
+    border-radius: 100%;
+    margin: 1vw;
+    animation: animate 1s infinite alternate-reverse;
+  }
+  @keyframes animate{
+    0%{
+      transform: scale(1);
+    }
+    100%{
+      transform: scale(1.2);
+    }
+  }
+  .one{
+    animation-delay: .2s;
+    border: 20px solid #00f;
+  }
+  .two{
+    animation-delay: .4s;
+    border: 20px solid #00f;
+  }
+  .three{
+    animation-delay: .6s;
+    border: 20px solid #00f;
+  }
+  .four{
+    animation-delay: .8s;
+    border: 20px solid #0ff;
+  }
+  .five{
+    animation-delay: 1s;
+    border: 20px solid #0ff;
+  }
